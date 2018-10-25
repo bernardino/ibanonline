@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "database")
 public class DatabaseConfig {
     private String user;
-    private String pass = "";
+    private String pass;
     private String url;
 }
 

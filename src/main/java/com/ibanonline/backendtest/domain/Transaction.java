@@ -4,7 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.time.ZonedDateTime;
+import java.sql.Timestamp;
 
 /**
  * @author Ricardo Bernardino
@@ -12,12 +12,13 @@ import java.time.ZonedDateTime;
 @Data
 @Builder
 public class Transaction {
+    private String transactionId;
     private String userId;
     private TransactionType transactionType;
     private String fromUser;
     private String toUser;
     private String currency;
     private BigDecimal amount;
-    private ZonedDateTime timestamp;
+    private Timestamp timestamp;
     private String description;
 }

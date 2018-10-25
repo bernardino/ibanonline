@@ -28,7 +28,8 @@ repositories {
 
 dependencies {
 	compile ('org.springframework.boot:spring-boot-starter-web')
-	testCompile ('org.springframework.boot:spring-boot-starter-test')
+	testCompile 'org.springframework.boot:spring-boot-starter-test',
+			'org.assertj:assertj-core:3.11.1'
 
 	compile 'org.projectlombok:lombok:1.18.2',
 			'com.google.guava:guava:27.0-jre',
